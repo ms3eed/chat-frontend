@@ -1,0 +1,10 @@
+<div class="chat-message-container"  ng-class="{'right darker': ce.message.userName == $root.userName}">
+    <figure class="profile-avatar" ng-class="ce.message.userName == $root.userName? 'right': 'left'">
+        <img width="45px" height="45px" src="components/img/profile-png.png"/>
+        <figcaption>{{ce.message.userName}}</figcaption>
+    </figure>
+    <div class="chat-container reset-margin-left" >
+        <div class="message-body">{{ce.message.message}}</div>
+    </div>
+    <span class="time" ng-class="ce.message.userName == $root.userName? 'time-left': 'time-right'">{{ce.message.createdAt * 1000| timeAgo}}</span>
+</div>

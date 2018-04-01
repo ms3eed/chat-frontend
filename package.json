@@ -1,0 +1,24 @@
+{
+  "name": "Chat-Frontend",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Chat Frontend Angular application",
+  "repository": "https://github.com/ms3eed/chat-frontend",
+  "devDependencies": {
+    "karma": "~0.12.9",
+    "karma-junit-reporter":"latest",
+    "http-server": "0.11.1",
+    "bower": "1.8.4"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+
+    "prestart": "npm install",
+    "start": "http-server app -a localhost -p 8000 -c-1",
+
+    "pretest": "npm install",
+    "test": "karma start karma.conf.js",
+    "test-single-run": "karma start karma.conf.js  --single-run"
+
+  }
+}

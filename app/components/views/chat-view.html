@@ -1,0 +1,14 @@
+<div class="center">
+	<chat-block messages="messages" user="$root.userName"></chat-block>
+</div>
+<div class="bottom_wrapper clearfix">
+	<div class="message_input_wrapper">
+		<input class="message_input" ng-model="chatMessage" placeholder="Type your message here..." />
+	</div>
+	<div class="send_message">
+		<div class="icon">
+
+		</div>
+		<div class="text" ng-click="addMessage()">Send</div>
+	</div>
+</div>
