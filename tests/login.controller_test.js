@@ -21,8 +21,5 @@ describe('LoginController Tests :', function() {
       expect(controller).toBeDefined();    
     }));
 
-    it('should have property message defined', inject(function() {
-      expect(controller.message).toEqual("Login Time!");    
-    }));
   });
 });

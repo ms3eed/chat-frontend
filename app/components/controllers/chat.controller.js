@@ -26,7 +26,8 @@ angular.module('chatFrontendApp.chat', ['ngRoute'])
 		var msg = {message : $scope.chatMessage, userName: $rootScope.userName};
 		ChatMessage.save(msg, function(data){
 			console.log(data);
-			$rootScope.$broadcast('chat-message-posted', msg);
+			$scope.chatMessage = "";
+			$rootScope.$broadcast('chat-message-posted', data);
 		});
 	}
 
